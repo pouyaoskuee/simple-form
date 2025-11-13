@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'iran-yekan';
+    src: url('fonts/Yekan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
@@ -9,10 +16,86 @@ html{
 }
 
 body{
+    font-family: 'iran-yekan';
+    background-color: #020f22;
 
 }
 
+p{
+    font-size: 1.5rem;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+}
+
+
 .container{
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffffff;
+    border: 2px solid #bd13bd;
+    box-shadow: 15px 20px 100px #570357;
+    border-radius: 11px;
+    padding: 0.5rem 1.5rem;
+    width: 40rem;
+    height: 40rem;
+    margin-top: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+label{
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    transition: all 0.15s ease-in-out;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border: 1px solid #bd13bd;
+    box-shadow: 0 0 5px #570357;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 11px;
+    background-color: #007ffb;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+.submit-form{
+    display: flex;
+justify-content: center;
 }
